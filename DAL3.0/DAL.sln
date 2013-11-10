@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{1021ECFB-C6C7-4CAB-8376-A5C21CE51F10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nunitTestHarness", "nunitTestHarness\nunitTestHarness.csproj", "{FB0DCEAD-6D4B-4292-9D8B-D57266DAD944}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL.csproj", "{DC5A211D-DF10-4BA1-95A0-B12E076DF776}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1021ECFB-C6C7-4CAB-8376-A5C21CE51F10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1021ECFB-C6C7-4CAB-8376-A5C21CE51F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1021ECFB-C6C7-4CAB-8376-A5C21CE51F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1021ECFB-C6C7-4CAB-8376-A5C21CE51F10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB0DCEAD-6D4B-4292-9D8B-D57266DAD944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB0DCEAD-6D4B-4292-9D8B-D57266DAD944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB0DCEAD-6D4B-4292-9D8B-D57266DAD944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB0DCEAD-6D4B-4292-9D8B-D57266DAD944}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC5A211D-DF10-4BA1-95A0-B12E076DF776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC5A211D-DF10-4BA1-95A0-B12E076DF776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC5A211D-DF10-4BA1-95A0-B12E076DF776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC5A211D-DF10-4BA1-95A0-B12E076DF776}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

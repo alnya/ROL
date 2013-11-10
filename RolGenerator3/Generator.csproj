@@ -1,0 +1,183 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6811050-3F76-43F0-A764-1B8728FF66FB}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Generator</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Generator</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevAge.Core">
+      <Name>DevAge.Core</Name>
+      <HintPath>..\Common\DevAge.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevAge.Drawing">
+      <Name>DevAge.Drawing</Name>
+      <HintPath>..\Common\DevAge.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="DevAge.SourceGrid3">
+      <Name>devage.sourcegrid3</Name>
+      <HintPath>..\Common\devage.sourcegrid3.dll</HintPath>
+    </Reference>
+    <Reference Include="DevAge.Windows.Forms">
+      <Name>DevAge.Windows.Forms</Name>
+      <HintPath>..\Common\DevAge.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.DataAccess, Version=2.111.6.20, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Common\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\BuildControls.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\BuildProcs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\BuildRol.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\BuildSession.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\BuildTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\BuildViews.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Builder\BuildWebServices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Connection\Connection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DB\DBContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DB\DBFunctions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\NUnitTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Templates\PageTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Templates\ProcTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Templates\RolTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Templates\SessionTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Templates\ViewTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Templates\WebServiceTemplate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
