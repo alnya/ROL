@@ -12,12 +12,12 @@ Works for MySQL, Microsoft SQL Server and mysql (but easily cusomizable to add s
 You need the connection details in the web.config - like:
 
   <!-- Database Connection Settings  -->
-  <add key="ConnectionType" value="oledb" /> 
-  <add key="ConnectionServer" value="localhost" />
-  <add key="ConnectionDataBase" value="Northwind" />
-  <add key="ConnectionPort" value="3306" /> 
-  <add key="ConnectionUserID" value="sa" />
-  <add key="ConnectionPassword" value="mypassword" />
+  &lt;add key="ConnectionType" value="oledb" /&gt; 
+  &lt;add key="ConnectionServer" value="localhost" /&gt;
+  &lt;add key="ConnectionDataBase" value="Northwind" /&gt;
+  &lt;add key="ConnectionPort" value="3306" /&gt;
+  &lt;add key="ConnectionUserID" value="sa" /&gt;
+  &lt;add key="ConnectionPassword" value="mypassword" /&gt;
     
 This should be used to populate a ConnectionSettings Object.
 
@@ -30,12 +30,21 @@ To load a specific record you can simply call:
 
 var conn = new ConnectionSettings();
 var object = new DatabaseTable(conn);
-conn.Load(1);
+object.Load(1);
+
+To save a specific record you can simply call:
+
+object.Value = 'new value';
+object.Save();
+
+To delete a specific record you can simply call:
+
+object.Delete();
 
 To search:
 
 var objects = new DatabaseTableList(conn);
-objects.Search('Deleted = 1');
+objects.Search('Deleted = 1', 'orderby desc');
 
 etc.
 
